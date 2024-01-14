@@ -17,7 +17,7 @@ const Header = () => {
       <Flex>
         <Heading color="white" ml={12}>
           <span style={{ color: "#8EDF67" }}>Nutri</span>
-          <span style={{ color: "#FFC671" }}>Plan</span>
+          <span style={{ color: "#FFC671" }}>Detect</span>
         </Heading>
         <Spacer />
         <Stack
@@ -26,6 +26,7 @@ const Header = () => {
           justifyContent="flex-end"
           mt={1}
           mr={12}
+          
         >
           <Button color="white" variant="unstyled" p={2}>
             <Text fontSize="xl">About</Text>

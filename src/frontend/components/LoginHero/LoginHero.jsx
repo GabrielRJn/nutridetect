@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex } from "@chakra-ui/react";
+import { Flex, Heading, Text} from "@chakra-ui/react";
 import backgroundImageUrl from "../../assets/hero-background.jpg";
 import LoginTile from "../LoginTile/LoginTile";
 
@@ -32,8 +32,28 @@ export const LoginHero = () => {
         >
           <LoginTile />
         </div>
+      
+        <Flex
+          position="absolute"
+          right={0} 
+          top="45%" 
+          transform="translateY(-50%)"
+          flexDirection="column"
+          alignItems="flex-end"
+          paddingRight="10%" 
+        >
+          <Heading color="white" fontSize="8xl" textShadow="0 4px 8px rgba(0, 0, 0, 0.7)">
+            Start your plan{" "}
+            <Text opacity="1" color="#FFC671">
+              today.
+            </Text>
+          </Heading>
+        </Flex>
+   
       </Flex>
+      
     </Flex>
+    
   );
 };
 

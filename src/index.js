@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import LoginPage from "./LoginPage";
+import AnalyserPage from "./Analyser";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -8,6 +9,7 @@ root.render(
     <Router>
       <Routes>
         <Route exact path="/loginpage" element={<LoginPage />} />
+       <Route exact path="/analyser" element={<AnalyserPage />} /> 
       </Routes>
     </Router>
   </React.StrictMode>
