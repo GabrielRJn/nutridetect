@@ -1,7 +1,13 @@
 import React from "react";
-import { Flex, Heading, Text} from "@chakra-ui/react";
+import { Flex, Heading, Text } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import backgroundImageUrl from "../../assets/hero-background.jpg";
 import LoginTile from "../LoginTile/LoginTile";
+
+const fadeInVariants = {
+  hidden: { opacity: 0, y: -50 },
+  visible: { opacity: 1, y: 0 },
+};
 
 export const LoginHero = () => {
   return (
@@ -32,28 +38,35 @@ export const LoginHero = () => {
         >
           <LoginTile />
         </div>
-      
-        <Flex
-          position="absolute"
-          right={0} 
-          top="45%" 
-          transform="translateY(-50%)"
-          flexDirection="column"
-          alignItems="flex-end"
-          paddingRight="10%" 
+
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={fadeInVariants}
+          transition={{ duration: 1 }}
+          style={{
+            position: "absolute",
+            right: 0,
+            top: "30%",
+            transform: "translateY(-50%)",
+            flexDirection: "column",
+            alignItems: "flex-end",
+            paddingRight: "10%",
+          }}
         >
-          <Heading color="white" fontSize="8xl" textShadow="0 4px 8px rgba(0, 0, 0, 0.7)">
-            Start your plan{" "}
-            <Text opacity="1" color="#FFC671">
+          <Heading
+            color="white"
+            fontSize="8xl"
+            textShadow="0 4px 8px rgba(0, 0, 0, 0.5)"
+          >
+            Start <br/> your plan {" "}
+            <Text opacity="1" as="span" color="#FFC671">
               today.
             </Text>
           </Heading>
-        </Flex>
-   
+        </motion.div>
       </Flex>
-      
     </Flex>
-    
   );
 };
 

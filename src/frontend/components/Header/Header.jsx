@@ -6,10 +6,9 @@ import {
   Button,
   Stack,
   Spacer,
-  Icon,
-  Text,
+  Text
 } from "@chakra-ui/react";
-import { FiSearch } from "react-icons/fi";
+import { Link } from "react-router-dom";
 import { CircleIcon } from "../CustomIcons/CircleIcon";
 const Header = () => {
   return (
@@ -24,17 +23,22 @@ const Header = () => {
           direction="row"
           alignContent="center"
           justifyContent="flex-end"
-          mt={1}
+          
           mr={12}
           
         >
+          <Link to="/about-me">
           <Button color="white" variant="unstyled" p={2}>
-            <Text fontSize="xl">About</Text>
+            <Text fontSize="2xl">About</Text>
           </Button>
-          <CircleIcon color="#8EDF67" boxSize={2} mt={4} />
+          </Link>
+       
+          <CircleIcon color="#8EDF67" boxSize={2} mt={6} />
+          <Link to="/contact">
           <Button color="white" variant="unstyled" p={2}>
-            <Text fontSize="xl">Contact</Text>
+            <Text fontSize="2xl">Contact</Text>
           </Button>
+          </Link>
         </Stack>
       </Flex>
     </Box>

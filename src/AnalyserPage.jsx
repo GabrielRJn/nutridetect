@@ -3,7 +3,7 @@ import React from "react";
 import { ChakraProvider } from "@chakra-ui/react";
 import { Box } from "@chakra-ui/react";
 import Header from "./frontend/components/Header/Header";
-import axios from 'axios';
+
 
 function Analyzer() {
   
