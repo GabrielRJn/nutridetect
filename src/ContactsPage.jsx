@@ -41,7 +41,7 @@ const ContactsPage = () => {
             Contacts Page
           </Heading>
           
-          <Box width="40vw" p={} mt={20} mb={200} maxW="100vw">
+          <Box width="40vw"  mt={20} mb={200} maxW="100vw">
             <FormLabel color="black" fontWeight="semibold" fontSize="large" mt={4}>
               Name
             </FormLabel>
