@@ -47,7 +47,7 @@ export const LoginHero = () => {
           style={{
             position: "absolute",
             right: 0,
-            top: "30%",
+            top: "25%",
             transform: "translateY(-50%)",
             flexDirection: "column",
             alignItems: "flex-end",

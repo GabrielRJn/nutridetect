@@ -14,10 +14,12 @@ const Header = () => {
   return (
     <Box p={4} bg="blackAlpha.900" boxShadow="md" w="100%">
       <Flex>
+        <Link to="/login-page">
         <Heading color="white" ml={12}>
           <span style={{ color: "#8EDF67" }}>Nutri</span>
           <span style={{ color: "#FFC671" }}>Detect</span>
         </Heading>
+        </Link>
         <Spacer />
         <Stack
           direction="row"

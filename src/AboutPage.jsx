@@ -13,11 +13,11 @@ function AboutPage() {
           <Box
             flex="1"
             bg="rgba(255, 255, 255, 0.95)"
-            p={8}
+            p={12}
             textAlign="left"
           >
             <Heading size="3xl" mb={6} mt={12} ml={5}>About this project</Heading>
-            <Text p={5}  mt={2} fontSize="xl">
+            <Text p={5}  mt={2} fontSize="2xl">
               This is a 3rd-year project for Anglia Ruskin University. The project is a web
               application that allows users to upload an image of a food item and get back
               nutritional information about that food item.
