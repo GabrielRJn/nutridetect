@@ -5,6 +5,7 @@ import AnalyserPage from "./AnalyserPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AboutPage from "./AboutPage";
 import ContactsPage from "./ContactsPage";
+import { Homepage } from "./Homepage";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
@@ -14,7 +15,7 @@ root.render(
        <Route exact path="/analyser" element={<AnalyserPage />} />
        <Route exact path="/about-me" element={<AboutPage />} /> 
        <Route exact path="/contact" element={<ContactsPage />} />
-       <Route exact path="/homepage" element={<ContactsPage />} />  
+       <Route exact path="/homepage" element={<Homepage />} />  
       </Routes>
     </Router>
   </React.StrictMode>
