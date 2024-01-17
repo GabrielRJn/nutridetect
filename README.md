@@ -4,7 +4,7 @@ This is a WIP final project to help prevention of nutritional deficiencies throu
 
 After providing the foods you have eaten with the day, a report will be generated to tell you whether your meals are nutritionally sufficient. If not, the application will us AI to provide useful meal suggestions, and save your report to your account.
 
-##Technologies
+## Technologies
 Frontend: Figma, React, Chakra UI, 
 Backend: Node.js, MongoDB, Express.js, Javascript, Python
 
