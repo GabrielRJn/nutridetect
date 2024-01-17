@@ -8,14 +8,13 @@ import veg from './frontend/assets/veg.jpg';
 const ContactsPage = () => {
   return (
     <ChakraProvider>
-      <Header />
+      <Header loggedOut={true} />
       <Box
         height="100vh"
         borderStyle="inset"
         position="relative"
-        overflow="hidden" // Ensure the image doesn't overflow
+        overflow="hidden" 
       >
-        {/* Background image for the upper part */}
         <Box
           height="25%"
          

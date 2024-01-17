@@ -26,7 +26,7 @@ function LoginPage() {
   return (
     <ChakraProvider>
       <Box>
-        <Header />
+        <Header loggedOut={true} />
 
         <LoginHero>
           <LoginTile />

@@ -23,7 +23,7 @@ const optionVariants = {
 export const Homepage = () => {
   return (
     <ChakraProvider>
-      <Header />
+      <Header loggedOut={false} />
       <Box height="100vh" width="100vw" bgColor="blackAlpha.900">
         <motion.div
           initial="hidden"

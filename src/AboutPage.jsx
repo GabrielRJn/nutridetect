@@ -8,7 +8,7 @@ function AboutPage() {
   return (
     <ChakraProvider>
       <Flex direction="column" height="100vh">
-        <Header />
+        <Header loggedOut={true} />
         <Flex flex="1">
           <Box
             flex="1"
