@@ -57,6 +57,7 @@ export const LoginForm = () => {
                         placeholder="Enter your username"
                         borderColor="#404040"
                         borderRadius={4}
+                        aria-label="Enter your username"
                       />
                     </InputGroup>
                     <FormErrorMessage>{form.errors.username}</FormErrorMessage>
@@ -78,6 +79,7 @@ export const LoginForm = () => {
                         type="password"
                         placeholder="Enter your password"
                         borderRadius={4}
+                        aria-label="Enter your password"
                       />
                     </InputGroup>
                     <FormErrorMessage>{form.errors.password}</FormErrorMessage>

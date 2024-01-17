@@ -22,6 +22,7 @@ const ContactsPage = () => {
           backgroundSize="cover"
           backgroundPosition="center"
           backgroundRepeat="no-repeat"
+          alt="Image of vegetables"
         
         />
         

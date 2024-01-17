@@ -25,6 +25,7 @@ export const LoginHero = () => {
         backgroundPosition="center"
         width="100%"
         height="100%"
+        alt="Background image of dinner"
       >
         <div
           style={{
