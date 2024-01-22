@@ -1,5 +1,6 @@
 
 import Webcam from "react-webcam";
+import { Box, Button } from "@chakra-ui/react";
 import { useCallback, useRef, useState } from "react";
 
 const CameraFunctions = () => {
@@ -17,20 +18,20 @@ const CameraFunctions = () => {
       }, [webcamRef]);
 
     return (
-      <div className="container">
+      <Box className="container" ml="25vw">
         {imgSrc ? (
           <img src={imgSrc} alt="webcam" />
         ) : (
-          <Webcam height={600} width={600} ref={webcamRef} />
+          <Webcam height={900} width={900} ref={webcamRef} />
         )}
-        <div className="btn-container">
+        <Box className="btn-container" mt="2vh" ml="22vw" >
           {imgSrc ? (
-            <button onClick={retake}>Retake photo</button>
+            <Button onClick={retake}>Retake photo</Button>
           ) : (
-            <button onClick={capture}>Capture photo</button>
+            <Button onClick={capture}>Capture photo</Button>
           )}
-        </div>
-      </div>
+        </Box>
+      </Box>
     );
   };
 

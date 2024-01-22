@@ -3,9 +3,9 @@ import ReactDOM from "react-dom/client";
 import LoginPage from "./LoginPage";
 import AnalyserPage from "./AnalyserPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import AboutPage from "./AboutPage";
+import AboutPage from "./frontend/AboutPage/AboutPage";
 import ContactsPage from "./ContactsPage";
-import { Homepage } from "./Homepage";
+import { Homepage } from "./Homepage/Homepage";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
