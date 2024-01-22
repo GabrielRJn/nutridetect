@@ -1,4 +1,4 @@
-import { ChakraProvider, Heading, Input, Box, Center, Spacer, Divider, FormLabel } from '@chakra-ui/react';
+import { ChakraProvider, Heading, Input, Box,  FormLabel } from '@chakra-ui/react';
 import React from 'react';
 import { Button } from '@chakra-ui/react';
 import Header from '../components/Header/Header';

@@ -1,6 +1,6 @@
-// LoginTile.jsx
+
 import React from 'react';
-import { Card, CardHeader, CardBody, Center, Box, Text, Link, useDisclosure } from '@chakra-ui/react';
+import { Card,  CardBody, Box,  } from '@chakra-ui/react';
 import LoginForm from './Login Form/LoginForm';
 
 

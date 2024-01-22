@@ -3,7 +3,7 @@ import React from 'react'
 
 import { Box, Flex, Text, Heading, Icon } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
-import { FaCog, FaHistory, FaChartLine } from 'react-icons/fa'; 
+import { FaCog, FaHistory, FaChartLine } from 'react-icons/fa';  //DO NOT DELETE
 import { Link } from 'react-router-dom'
 import { optionVariants } from '../FadeInReuseables/FadeFunctions'
 //Fade in menu tile for homepage

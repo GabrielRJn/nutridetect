@@ -1,11 +1,9 @@
 import { ChakraProvider, Heading, Box, HStack, Flex, Icon , Text , Link, Menu } from '@chakra-ui/react';
 import { FaCog, FaHistory, FaChartLine } from 'react-icons/fa'; 
-import { motion } from 'framer-motion';
 import React from 'react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer';
 import MenuTile from '../../components/FadeInReuseables/MenuTile';
-import { fadeInVariants } from '../../components/FadeInReuseables/FadeFunctions';
 import FadeinHeading from '../../components/FadeInReuseables/FadeinHeading';
 const user = {
   firstName: "Gabriel",
