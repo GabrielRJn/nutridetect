@@ -1,8 +1,8 @@
 import React from 'react';
 import { Box, ChakraProvider, Heading, Text, Flex } from '@chakra-ui/react';
-import AboutMeImage from '../assets/about-me.jpg';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer';
+import AboutMeImage from '../../assets/about-me.jpg'; 
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer';
 
 function AboutPage() {
   return (

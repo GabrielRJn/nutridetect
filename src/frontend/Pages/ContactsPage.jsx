@@ -1,11 +1,13 @@
 import { ChakraProvider, Heading, Input, Box, Center, Spacer, Divider, FormLabel } from '@chakra-ui/react';
 import React from 'react';
 import { Button } from '@chakra-ui/react';
-import Header from './frontend/components/Header/Header';
-import Footer from './frontend/components/Footer';
-import veg from './frontend/assets/veg.jpg';
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer';
+import veg from '../assets/veg.jpg';
 
 const ContactsPage = () => {
+
+  
   return (
     <ChakraProvider>
       <Header loggedOut={true} />

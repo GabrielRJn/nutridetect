@@ -2,8 +2,8 @@
 import React from "react";
 import { ChakraProvider, Heading } from "@chakra-ui/react";
 import { Box } from "@chakra-ui/react";
-import Header from "./frontend/components/Header/Header";
-import Footer from "./frontend/components/Footer";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer";
 
 
 function Analyzer() {

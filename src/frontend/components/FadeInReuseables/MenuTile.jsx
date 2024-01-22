@@ -1,22 +1,13 @@
 import React from 'react'
 
 
-import { Box, Link, Flex, Text, Heading, Icon } from '@chakra-ui/react'
+import { Box, Flex, Text, Heading, Icon } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import { FaCog, FaHistory, FaChartLine } from 'react-icons/fa'; 
-
-
+import { Link } from 'react-router-dom'
+import { optionVariants } from '../FadeInReuseables/FadeFunctions'
 //Fade in menu tile for homepage
 
-const fadeInVariants = {
-    hidden: { opacity: 0, y: -50 },
-    visible: { opacity: 1, y: 0 },
-  };
-  
-  const optionVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
-  };
   
 const MenuTile = props => {
   return (
@@ -41,6 +32,7 @@ const MenuTile = props => {
               boxShadow="dark-lg"
               width="20vw"
               height="40vh"
+              overflow="hidden"
               _hover={{
                 boxShadow: '0 0 20px rgba(255, 255, 255, 0.3)', 
                 transform: 'scale(1.1)',

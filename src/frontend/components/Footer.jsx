@@ -13,6 +13,7 @@ function Footer() {
       height={12}
       width="100%"
     >
+      
       <Text>&copy; NutriDetect | LinkedIn | GitHub</Text> 
     </Box>
   );

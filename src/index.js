@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import LoginPage from "./LoginPage";
-import AnalyserPage from "./AnalyserPage";
+import AnalyserPage from "./frontend/Pages/AnalyserPage/AnalyserPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import AboutPage from "./frontend/AboutPage/AboutPage";
-import ContactsPage from "./ContactsPage";
-import { Homepage } from "./Homepage/Homepage";
+import AboutPage from "./frontend/Pages/AboutPage/AboutPage";
+import ContactsPage from "./frontend/Pages/ContactsPage";
+import { Homepage } from "./frontend/Pages/Homepage/Homepage";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>

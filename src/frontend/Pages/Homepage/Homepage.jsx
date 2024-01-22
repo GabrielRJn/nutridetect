@@ -2,10 +2,9 @@ import { ChakraProvider, Heading, Box, HStack, Flex, Icon , Text , Link, Menu } 
 import { FaCog, FaHistory, FaChartLine } from 'react-icons/fa'; 
 import { motion } from 'framer-motion';
 import React from 'react';
-import Header from '../frontend/components/Header/Header';
-import Footer from '../frontend/components/Footer';
-import CameraFunctions from '../CameraFunctions';
-import MenuTile from './MenuTile';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer';
+import MenuTile from '../../components/FadeInReuseables/MenuTile';
 
 const user = {
   firstName: "Gabriel",
