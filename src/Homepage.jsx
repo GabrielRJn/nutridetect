@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import Header from './frontend/components/Header/Header';
 import Footer from './frontend/components/Footer';
+import CameraFunctions from './CameraFunctions';
 
 const user = {
   firstName: "Gabriel",
@@ -70,6 +71,10 @@ export const Homepage = () => {
               boxShadow="dark-lg"
               width="20vw"
               height="40vh"
+              onClick={() => {
+                <CameraFunctions />
+
+              }}
               _hover={{
                 boxShadow: '0 0 20px rgba(255, 255, 255, 0.3)', 
                 transform: 'scale(1.1)',
@@ -142,6 +147,7 @@ export const Homepage = () => {
                 color: 'rgba(255, 255, 255)',
                 borderColor: 'rgba(255, 255, 255)',
               }}
+            
             >
               <Icon as={FaCog} boxSize="16" mb={4} />
               <Heading size="lg" mb={4}>

@@ -11,8 +11,11 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.5",
+    "dynamsoft-camera-enhancer": "^4.0.1",
+    "dynamsoft-javascript-barcode": "^9.6.32",
     "formik": "^2.4.3",
     "framer-motion": "^10.18.0",
+    "mongodb": "^6.3.0",
     "mongoose": "^7.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -20,6 +23,8 @@
     "react-router-dom": "^6.15.0",
     "react-scripts": "5.0.1",
     "react-spring": "^9.7.3",
+    "react-stepper-horizontal": "^1.0.11",
+    "react-webcam": "^7.2.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

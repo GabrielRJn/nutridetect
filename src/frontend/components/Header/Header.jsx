@@ -48,12 +48,12 @@ const Header = ({ loggedOut}) => {
             </>
           ) : (
             <>
-              <Tooltip label="View Profile" aria-label="View profile tooltip">
-              <Icon as={FaUser} boxSize="10" mb={4} p={2} color="white" />
+              <Tooltip label="View Profile" mt="7vh" left="87vw" aria-label="View profile tooltip">
+              <Icon as={FaUser} boxSize="10" mb={4}  p={2} color="white" />
               </Tooltip>
               <Spacer boxSize={4}/>
-              <Tooltip label="Logout" aria-label="Log out tooltip">
-              <Icon as={FaDoorOpen} boxSize="10" mb={4} p={1} color="white" />
+              <Tooltip label="Log out" aria-label="Log out tooltip" left="93vw" mt="7vh">
+              <Icon as={FaDoorOpen} boxSize="10" mb={4} p={1}  color="white" />
               </Tooltip>
             </>
           )}
