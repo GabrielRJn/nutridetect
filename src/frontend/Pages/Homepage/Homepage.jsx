@@ -1,4 +1,4 @@
-import { ChakraProvider, Heading, Box, HStack, Flex, Icon , Text , Link, Menu } from '@chakra-ui/react';
+import { ChakraProvider,  Box, HStack,  } from '@chakra-ui/react';
 import { FaCog, FaHistory, FaChartLine } from 'react-icons/fa'; 
 import React from 'react';
 import Header from '../../components/Header/Header';
@@ -15,7 +15,7 @@ export const Homepage = () => {
     <ChakraProvider>
       <Header loggedOut={false} />
       <Box height="100vh" width="100vw" bgColor="blackAlpha.900">
-        <FadeinHeading text="Hello {user.firstName}, choose an option below..."/>
+        <FadeinHeading text={`Hello ${user.firstName}, choose an option below...`} />
         
         <HStack spacing={20} justify="center" pt={80} height="70vh">
         <MenuTile title="New Analysis" description="Generate a new report" icon={FaChartLine} linkTo="/analyser"/>
