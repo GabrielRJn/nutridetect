@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from "react";
 import { ChakraProvider } from "@chakra-ui/react";
 import { Box } from "@chakra-ui/react";
-import Header from "./frontend/components/Header/Header";
-import LoginHero from "./frontend/components/LoginHero/LoginHero";
-import { LoginTile } from "./frontend/components/LoginTile/LoginTile";
+import Header from "../components/Header/Header";
+import LoginHero from "../components/LoginHero/LoginHero";
+import { LoginTile } from "../components/LoginTile/LoginTile";
 import axios from 'axios';
-import Footer from "./frontend/components/Footer";
+import Footer from "../components/Footer";
 
 function LoginPage() {
 

@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import LoginPage from "./LoginPage";
+import LoginPage from "./frontend/Pages/LoginPage";
 import AnalyserPage from "./frontend/Pages/AnalyserPage/AnalyserPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AboutPage from "./frontend/Pages/AboutPage/AboutPage";
