@@ -1,7 +1,7 @@
 import React from 'react'
 import { Heading } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
-import { fadeInVariants } from '../../utils/motionVariants'
+import { fadeInVariants } from '../FadeInReuseables/FadeFunctions'
 const FadeinHeading = (props) => {
   return (
     <motion.div

@@ -3,14 +3,13 @@ import Webcam from "react-webcam";
 import { Box, Button } from "@chakra-ui/react";
 import { useCallback, useRef, useState } from "react";
 
-const CameraFunctions = () => {
+const CameraBoxForAnalyser = () => {
     const webcamRef = useRef(null);
     const [imgSrc, setImgSrc] = useState(null);
 
     const retake = () => {
         setImgSrc(null);
       };
-    
 
       const capture = useCallback(() => {
         const imageSrc = webcamRef.current.getScreenshot();
@@ -35,4 +34,4 @@ const CameraFunctions = () => {
     );
   };
 
-  export default CameraFunctions;
+  export default CameraBoxForAnalyser;
