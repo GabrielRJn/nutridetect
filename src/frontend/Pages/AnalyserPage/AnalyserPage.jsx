@@ -1,8 +1,9 @@
 import React from "react";
-import { ChakraProvider, Heading, Box, Flex, Tag, Text } from "@chakra-ui/react";
+import { ChakraProvider, Heading, Box, Flex, Tag, Text, Tooltip } from "@chakra-ui/react";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer";
 import AnalyserMenuItem from "../../components/AnalyserMenuItem/AnalyserMenuItem";
+import ArrowIcon from "../../components/ArrowIcon";
 
 
 function Analyzer() {
@@ -12,26 +13,28 @@ function Analyzer() {
     <ChakraProvider>
       <Header />
       
-      <Box height="100vh" >
-      
+      <Box height="120vh" >
+     
         <Flex  >
+          <ArrowIcon LinkTo="/homepage" />
          <Flex
             as="div"
             flexDir="column"
             justify="flex-end"
             width="40vw"
-            height="94vh"
+            height="114vh"
            mr="20vw"
            ml="5vw"
            
           >
+            <Box mb="20vh">
             <Heading
             
           fontWeight="bold"
           width="40vw"
           size="4xl"
           color="#404040"
-          mb="4vw"
+          mb="10vh"
           
           textDecorationStyle="solid"
           textDecoration="underline"
@@ -46,12 +49,15 @@ function Analyzer() {
             <AnalyserMenuItem
               heading="Scan a recipe"
               text="Scan a recipe using your phone's camera"
+              type="scan"
             />
             <AnalyserMenuItem
               heading="Add a recipe manually"
               text="Add a recipe manually by filling in the form below"
+              type="manual"
             />
-          </Flex> 
+          </Flex>
+          </Box> 
           </Flex>
          
           <Flex background="#1F242B" width="80vw" flexDir="row">

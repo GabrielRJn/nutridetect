@@ -1,9 +1,11 @@
 
 import Webcam from "react-webcam";
-import { Box, Button } from "@chakra-ui/react";
+import { Box, Button, Modal, ModalBody, useDisclosure } from "@chakra-ui/react";
 import { useCallback, useRef, useState } from "react";
+import React from "react";
 
 const CameraBoxForAnalyser = () => {
+    const { isOpen, onOpen, onClose } = useDisclosure();
     const webcamRef = useRef(null);
     const [imgSrc, setImgSrc] = useState(null);
 
@@ -17,6 +19,8 @@ const CameraBoxForAnalyser = () => {
       }, [webcamRef]);
 
     return (
+      <Modal isOpen={isOpen} onClose={onClose} size="xl">
+      <ModalBody>
       <Box className="container" ml="25vw">
         {imgSrc ? (
           <img src={imgSrc} alt="webcam" />
@@ -31,6 +35,8 @@ const CameraBoxForAnalyser = () => {
           )}
         </Box>
       </Box>
+      </ModalBody>
+    </Modal>
     );
   };
 
