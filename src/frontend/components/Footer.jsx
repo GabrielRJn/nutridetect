@@ -10,7 +10,7 @@ function Footer() {
       textAlign="center"
         position="absolute"
       bottom="0"
-      height={12}
+      height="6vh"
       width="100%"
     >
       
