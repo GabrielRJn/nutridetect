@@ -10,7 +10,7 @@ const AnalyserMenuItem = (props) => {
       }
       } 
        p={5}>
-        <Heading as="span" fontWeight="semibold" color="#404040" mb={2} > {props.heading} </Heading>
+        <Heading as="span" fontWeight="medium" color="#404040" mb={2} > {props.heading} </Heading>
         <Text mt={2} fontSize="xl" fontStyle="italic">{props.text}</Text>
     
     </Box>

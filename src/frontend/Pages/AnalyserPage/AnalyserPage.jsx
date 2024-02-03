@@ -12,7 +12,7 @@ function Analyzer() {
     <ChakraProvider>
       <Header />
       
-      <Box height="93vh" >
+      <Box height="100vh" >
       
         <Flex  >
          <Flex
@@ -20,7 +20,7 @@ function Analyzer() {
             flexDir="column"
             justify="flex-end"
             width="40vw"
-            height="87vh"
+            height="94vh"
            mr="20vw"
            ml="5vw"
            
@@ -31,7 +31,7 @@ function Analyzer() {
           width="40vw"
           size="4xl"
           color="#404040"
-          mb="2vw"
+          mb="4vw"
           
           textDecorationStyle="solid"
           textDecoration="underline"
@@ -56,10 +56,12 @@ function Analyzer() {
          
           <Flex background="#1F242B" width="80vw" flexDir="row">
             <Box ml="9vw"  mt={10}>
+              
             <Heading fontWeight="semibold" color="whiteAlpha.800" fontSize="5xl">
               Overview 
               <Tag ml="1vw" mt="1.5vw" borderRadius="6%" fontWeight="bold" colorScheme="orange">{numberOfItems} ITEMS</Tag>
             </Heading>
+
             <Box ml="5vw" mt="5vh">
 
            { numberOfItems === 0 ? 
@@ -70,7 +72,7 @@ function Analyzer() {
             </Box>
             </Flex> 
           </Flex>
-        {/* </Flex>*/}
+       
       </Box> 
 
       <Footer />
