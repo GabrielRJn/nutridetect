@@ -9,7 +9,7 @@ const AnalyserMenuItem = (props) => {
 
   const handleType = () =>{
     if (props.type === "scan") {
-      console.log("scan")
+      <CameraBoxForAnalyser />
       
     } else{
 
